@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashad's Analogue and Reads</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Section Titles */
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+    /* Film Photography Section */
+    .photo-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .category {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+    .category h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #444;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 3px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    /* Reads Section */
+    .reads-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
+    }
+    .read-category {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .read-category h3 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #444;
+    }
+    .read-category ul {
+      list-style: none;
+      padding: 0;
+    }
+    .read-category li {
+      background: #f4f4f4;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-left: 4px solid #222;
+      border-radius: 3px;
+    }
+    .read-category li p {
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #666;
+    }
+    /* Footer */
+    footer p {
+      font-size: 0.9em;
+    }
+    /* Responsive Navigation */
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+      .reads-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Ashad's Analogue and Reads</h1>
+      <nav>
+        <ul>
+          <li><a href="#photography">Film Photography</a></li>
+          <li><a href="#reads">My Reads</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Film Photography Section -->
+    <section id="photography" class="container">
+      <h2>Film Photography</h2>
+      <div class="photo-categories">
+        <!-- Portraits Category -->
+        <div class="category" id="portraits">
+          <h3>Portraits</h3>
+          <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Portrait+1" alt="Portrait 1">
+            <img src="https://via.placeholder.com/300x200?text=Portrait+2" alt="Portrait 2">
+            <img src="https://via.placeholder.com/300x200?text=Portrait+3" alt="Portrait 3">
+          </div>
+        </div>
+        <!-- Landscape Category -->
+        <div class="category" id="landscape">
+          <h3>Landscape</h3>
+          <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Landscape+1" alt="Landscape 1">
+            <img src="https://via.placeholder.com/300x200?text=Landscape+2" alt="Landscape 2">
+            <img src="https://via.placeholder.com/300x200?text=Landscape+3" alt="Landscape 3">
+          </div>
+        </div>
+        <!-- Street Photography Category -->
+        <div class="category" id="street">
+          <h3>Street Photography</h3>
+          <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Street+1" alt="Street 1">
+            <img src="https://via.placeholder.com/300x200?text=Street+2" alt="Street 2">
+            <img src="https://via.placeholder.com/300x200?text=Street+3" alt="Street 3">
+          </div>
+        </div>
+        <!-- Miscellaneous Category -->
+        <div class="category" id="miscellaneous">
+          <h3>Miscellaneous</h3>
+          <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Misc+1" alt="Miscellaneous 1">
+            <img src="https://via.placeholder.com/300x200?text=Misc+2" alt="Miscellaneous 2">
+            <img src="https://via.placeholder.com/300x200?text=Misc+3" alt="Miscellaneous 3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reads Section -->
+    <section id="reads" class="container">
+      <h2>My Reads</h2>
+      <div class="reads-container">
+        <!-- Currently Reading -->
+        <div class="read-category" id="currently-reading">
+          <h3>Currently Reading</h3>
+          <ul>
+            <li>
+              <strong>Book Title 1</strong> by Author A
+              <p>A brief note or review about this book...</p>
+            </li>
+            <li>
+              <strong>Book Title 2</strong> by Author B
+              <p>A brief note or review about this book...</p>
+            </li>
+          </ul>
+        </div>
+        <!-- To Be Read (TBR) -->
+        <div class="read-category" id="tbr">
+          <h3>To Be Read (TBR)</h3>
+          <ul>
+            <li>
+              <strong>Book Title 3</strong> by Author C
+            </li>
+            <li>
+              <strong>Book Title 4</strong> by Author D
+            </li>
+          </ul>
+        </div>
+        <!-- Already Read -->
+        <div class="read-category" id="already-read">
+          <h3>Already Read</h3>
+          <ul>
+            <li>
+              <strong>Book Title 5</strong> by Author E
+              <p>Review: This book left a strong impression because...</p>
+            </li>
+            <li>
+              <strong>Book Title 6</strong> by Author F
+              <p>Review: I loved the narrative style and character development...</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ashad's Analogue and Reads. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
